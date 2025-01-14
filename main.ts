@@ -3,6 +3,7 @@ input.onButtonPressed(Button.A, function () {
     basic.pause(500)
     Time = 37
     for (let index = 0; index < 37; index++) {
+        music.play(music.stringPlayable("C5 - A - B - - C5 ", 450), music.PlaybackMode.UntilDone)
         basic.showNumber(Time)
         Time = Time - 1
         basic.pause(1000)
@@ -21,6 +22,7 @@ input.onButtonPressed(Button.B, function () {
     basic.pause(500)
     Time = 37
     for (let index = 0; index < 37; index++) {
+        music.play(music.stringPlayable("C5 - A - B - - C5 ", 450), music.PlaybackMode.UntilDone)
         basic.showNumber(Time)
         Time = Time - 1
         basic.pause(1000)
